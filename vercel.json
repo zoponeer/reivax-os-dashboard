@@ -1,8 +1,4 @@
 {
-  "env": {
-    "DATA_PATH": "@data_path",
-    "NEXT_PUBLIC_VPS_DATA_URL": "@vps_data_url"
-  },
   "buildCommand": "next build",
   "outputDirectory": ".next"
 }
