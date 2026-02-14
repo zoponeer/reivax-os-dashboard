@@ -5,6 +5,7 @@ import PipelineChart from '../components/PipelineChart'
 import TopDealsTable from '../components/TopDealsTable'
 import CampaignMetrics from '../components/CampaignMetrics'
 import AgentStatus from '../components/AgentStatus'
+import OrgChart from '../components/OrgChart'
 import {
   fetchPipelineData,
   fetchScoredDeals,
@@ -131,6 +132,11 @@ export default function Home() {
                   replyRate={campaignMetrics.replyRate}
                   responseCount={campaignMetrics.responseCount}
                 />
+              </section>
+
+              {/* Organization Chart Section */}
+              <section>
+                <OrgChart agents={agents} />
               </section>
 
               {/* Pipeline & Deals Section */}
